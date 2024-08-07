@@ -1,6 +1,6 @@
 /* Style pour l'en-tête */
 header {
-  background-color: #333;
+  background-color: #007bff;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -14,16 +14,34 @@ p {
   margin-bottom: 20px;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
 /* Style pour le lien */
 a {
-  color: #337ab7;
+  color: #007bff;
   text-decoration: none;
 }
 
 /* Style pour le pied de page */
 footer {
-  background-color: #333;
+  background-color: #007bff;
   color: #fff;
   text-align: center;
   padding: 20px;
+}
+
+/* Style pour la liste du pied de page */
+footer ul {
+  list-style-type: none;
+}
+
+/* Style pour les liens du pied de page */
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
