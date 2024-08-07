@@ -1,0 +1,29 @@
+/* Style pour l'en-tête */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style pour le paragraphe de texte */
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style pour le lien */
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+/* Style pour le pied de page */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
