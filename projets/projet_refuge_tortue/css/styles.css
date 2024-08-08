@@ -1,0 +1,450 @@
+/* Style commun à toutes les pages */
+/* Body */
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0px;
+}
+
+/* Header */
+header{
+    background-image: linear-gradient(to right,rgba(31, 191, 184, 0.54),rgba(25,120, 165, 0.54),rgba(3,17, 99, 0.54)),
+                    url('../images/banner.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+}
+
+header h1{
+    border-style: solid;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 50px 30px;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    background: linear-gradient(to right,rgba(31, 191, 184, 0.54),rgba(25,120, 165, 0.54),rgba(3,17, 99, 0.54));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    border-style: solid;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer div .link{
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+footer div .link-other{
+    margin: 5px;
+}
+
+/* Page d'Acceuil */
+/* Conteneur principal */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.container a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Bulles */
+.image-visit, .image-price, .image-training, .image-turtle{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+    margin: 7% 0%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.image-visit{
+    background-image: linear-gradient(to right,rgba(31, 191, 184, 0.54), rgba(31, 191, 184, 0.54)),
+                    url('../images/visit.jpg');
+}
+
+.image-price{
+    background-image: linear-gradient(to right,rgba(25, 120, 165, 0.54), rgba(25, 120, 165, 0.54)),
+                    url('../images/price.jpg');
+    background-position: right;
+}
+
+.image-training{
+    background-image: linear-gradient(to right,rgba(3, 17, 99, 0.54), rgba(3, 17, 99, 0.54)),
+                    url('../images/training.jpg');
+}
+
+.image-turtle{
+    background-image: linear-gradient(to right,rgba(2, 8, 42, 0.541), rgba(2, 8, 42,0.541)),
+                    url('../images/turtle.jpg');
+}
+
+/* Div contenant le text*/
+.visit, .price, .training, .turtle{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.visit{
+    background-color: #1FBFB8;
+}
+
+.price{
+    background-color: #1978A5;
+}
+
+.training{
+    background-color: #031163;
+}
+
+.turtle{
+    background-color: #02082a;
+}
+
+/* Commun aux pages visites, tarifs et formations */
+/* Aside */
+aside{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+aside h2{
+    padding: 28px;
+    margin-top: 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Article */
+article{
+    color: #000000;
+    margin: 0px 16px;
+}
+
+article h3 a{
+    color: #0A415B;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+/* Page Visites */
+.aside-visit h2{
+    background-color: rgba(31, 191, 184, 0.54);
+}
+
+.aside-visit{
+    background-image: url('../images/visit.jpg');
+}
+
+.article-visit h2{
+    color: #1FBFB8;
+}
+
+/* Page Tarifs */
+.aside-price h2{
+    background-color: rgba(25, 120, 165, 0.54);
+}
+
+.aside-price{
+    background-image: url('../images/price.jpg');
+}
+
+.article-price h2{
+    color: #1978A5;
+}
+
+/* Page Formations */
+.aside-training h2{
+    background-color: rgba(3, 17, 99, 0.54);
+}
+
+.aside-training{
+    background-image: url('../images/training.jpg');
+}
+
+.article-training h2{
+    color: #031163;
+}
+
+
+/* Page Galerie */
+.aside-turtle h2{
+    background-color: rgba(2, 8, 42, 0.541);
+}
+
+.aside-turtle{
+    background-image: url('../images/turtle.jpg');
+}
+
+.article-turtle h2{
+    color: #02082a;
+}
+
+/* Photos */
+/* Conteneur de photos */
+.album{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo{
+    border: 1px solid #0A415B;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.photo img{
+    height: 250px;
+    width: 220px;
+    transition: all 0.5s linear;
+}
+
+/* Transition (zoom et filtre) */
+.photo img:hover{
+	transform : scale(1.4);
+    filter: grayscale(80%);
+}
+
+.photo p{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.831);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoom {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Formulaire */
+.form-container{
+    margin-left: 20px;
+    margin-bottom: 28px;
+}
+
+.form-label{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.form-input{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-input .form-field, .form-input .form-button{
+    border: 1px solid #031163;
+    padding: 10px;
+}
+
+.form-input .form-field{
+    border-radius: 3px 0px 0px 3px;
+    margin-left: 10px;
+}
+
+.form-input .form-button{
+    border-radius: 0px 3px 3px 0px;
+    background-color: #031163;
+    color: #ffffff;
+}
+
+/* Erreur formulaire */
+.form-input .field-invalid, .form-input .button-invalid{
+    border: 1px solid #b20505;
+}
+
+.form-input .button-invalid{
+    background-color: #b20505;
+}
+
+.error-text{
+    color: #b20505;
+    margin-top: 10px;
+}
+
+/* Validation formulaire */
+.form-registered{
+    border-radius: 3px;
+    color: #03361d;
+    background-color: #61d39c;
+    height: fit-content;
+    width: fit-content;
+    padding: 14px;
+}
+
+@media screen and (min-width: 750px) {
+    /* Footer */
+    footer{
+        flex-direction: column;
+    }
+
+    footer div{
+        display: flex;
+        align-items: baseline;
+        align-content: space-around;
+        justify-content: space-evenly;
+    }
+
+    footer div .link{
+        margin-right: 270px;
+    }
+
+    /* Conteneur principal */
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+
+    /* Bulles */
+    .image-visit, .image-price, .image-training, .image-turtle{
+        margin: 45% 0%;
+        height: 160px;
+        width: 160px;
+    }
+
+    /* Page Galerie */
+    .album{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .photo img{
+        height: 280px;
+        width: 250px;
+    }
+
+    /* Formulaire */
+    .form-label{
+        margin-left: 30%;
+    }
+
+    .form-input .form-field{
+        margin-left: 14%;
+        padding-right: 35%;
+    }
+
+    /* Erreur formulaire */
+    .error-text{
+        text-align: center;
+    }
+
+    /* Validation formulaire */
+    .form-registered{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    /* Header */
+    header h1{
+        margin: 80px 30px;
+    }
+
+    /* Footer */
+    footer div .link{
+        margin-right: 500px;
+    }
+
+    /* Bulles */
+    .image-visit, .image-price, .image-training, .image-turtle{
+        margin: 10% 0%;
+        height: 320px;
+        width: 320px;
+        font-size: 32px;
+    }
+
+    /* Commun aux pages visites, tarifs et formations */
+    .info-page{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .info-page aside{
+        margin-right: 12px;
+        height: auto;
+        width: auto;
+    }
+
+    .info-page aside h2{
+        height: auto;
+        width: 350px;
+    }
+
+    /* Page Galerie */
+    /* Formulaire */
+    .form-input{
+        justify-content: flex-start;
+    }
+
+    .form-label{
+        margin-left: 10px;
+    }
+
+    .form-input .form-field, .form-input .form-button{
+        padding: 10px;
+    }
+
+    .form-input .form-field{
+        margin-left: 10px;
+    }
+
+    /* Erreur formulaire */
+    .error-text{
+        margin-left: 12px;
+    }
+}
