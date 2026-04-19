@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="diceapp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Roller</h1>
+        <label for="dice-type">Select Dice Type</label>
+        <select name="dice-type" id="dice-type" class="dice-select">
+            <option value="2">2-sided</option>
+            <option value="3">3-sided</option>
+            <option value="4">4-sided</option>
+            <option value="6">6-sided</option>
+            <option value="8">8-sided</option>
+            <option value="10">10-sided</option>
+            <option value="12">12-sided</option>
+            <option value="16">16-sided</option>
+            <option value="20" selected>20-sided</option>
+            <option value="24">24-sided</option>
+            <option value="30">30-sided</option>
+            <option value="100">100-sided</option>
+        </select>
+        <label for="number-of-dice">Number of Dice</label>
+        <input type="number" name="number-of-dice" id="number-of-dice" class="dice-input" min="1" value="1">
+		<label for="roll-type">Select Roll Type :</label>
+		<select name="roll-type" id="roll-type" class="dice-roll">
+		  <option value="neutral" selected>Neutral (default)</option>
+		  <option value="rollOver">Roll Over (Higher score is better)</option>
+		  <option value="rollUnder">Roll Under (Lower score is better)</option>
+		</select>
+        <button id="roll-dice" class="roll-button">Roll The Dice</button>
+        <p id="p-result" class="dice-result is-hidden">Result: <span id="result" class="result"></span></p>
+    </div>
+    <script src="diceapp.js"></script>
+</body>
+</html>

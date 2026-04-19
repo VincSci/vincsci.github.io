@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #0a0a0a;
+    padding: 20px;
+	border: 2px solid #d4af37;
+	background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.dice-select, .dice-input, .dice-roll {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+	background-color: #1a1a1a;
+	color: #e0e0e0;
+}
+
+.dice-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.roll-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d4af37;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bolder;
+}
+
+.roll-button:hover {
+    background-color: #f2c32c;
+}
+
+.dice-result{
+    margin-top: 5%;
+	margin-left: 35%;
+}
+
+.result-span {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.color-gold {
+	color: #d4af37;
+    font-weight: bold;
+	text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+}
+
+.color-blood {
+    color: #8b0000;
+    font-weight: bold;
+}
